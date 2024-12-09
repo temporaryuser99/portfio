@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #64748b);
+            color: white;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #38bdf8;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        .skills-section {
+            padding: 80px 30px;
+            max-width: 1600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .skills-title {
+            margin-bottom: 50px;
+        }
+
+        .skills-title h1 {
+            font-size: 4rem;
+            font-weight: 900;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .skill-item h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        footer {
+            background: #0f172a;
+            padding: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a {
+            color: #38bdf8;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button" aria-label="Back to Home Page">← Back to Home</a>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="skills-title">
+            <h1>My Skills</h1>
+        </div>
+        <div class="skills-grid">
+            <!-- Skill Items -->
+            <div class="skill-item">
+                <img src="photoshop.png" alt="Photoshop Icon"> <!-- Replace with actual image -->
+                <h2>Photoshop</h2>
+            </div>
+            <div class="skill-item">
+                <img src="Adobe_Illustrator_CC_icon.svg-removebg-preview.png" alt="Illustrator Icon"> <!-- Replace with actual image -->
+                <h2>Illustrator</h2>
+            </div>
+            <div class="skill-item">
+                <img src="Procreate.png" alt="Procreate Icon"> <!-- Replace with actual image -->
+                <h2>Procreate</h2>
+            </div>
+            <div class="skill-item">
+                <img src="-premiere-pro.png" alt="Premiere Pro Icon"> <!-- Replace with actual image -->
+                <h2>Premiere Pro</h2>
+            </div>
+            <div class="skill-item">
+                <img src="Figma.png" alt="Figma Icon"> <!-- Replace with actual image -->
+                <h2>Figma</h2>
+            </div>
+            <div class="skill-item">
+                <img src="sketchup.png" alt="SketchUp Icon"> <!-- Replace with actual image -->
+                <h2>SketchUp</h2>
+            </div>
+            <div class="skill-item">
+                <img src="adobe aero.png" alt="Adobe Aero Icon"> <!-- Replace with actual image -->
+                <h2>Adobe Aero</h2>
+            </div>
+            <div class="skill-item">
+                <img src="adobe animation.png" alt="Adobe Animate Icon"> <!-- Replace with actual image -->
+                <h2>Adobe Animate</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. Connect with me on:
+            <a href="#">LinkedIn</a> | <a href="#">Behance</a> | <a href="#">Email</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

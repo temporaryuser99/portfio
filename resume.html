@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #64748b);
+            color: white;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #38bdf8;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        .resume-section {
+            padding: 60px 30px;
+            max-width: 1600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .resume-title {
+            margin-bottom: 50px;
+        }
+
+        .resume-title h1 {
+            font-size: 4rem;
+            font-weight: 900;
+        }
+
+        .resume-title p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+
+        .resume-content {
+            margin-top: 20px;
+        }
+
+        .resume-item {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .resume-item h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .resume-item p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .download-button {
+            background-color: #38bdf8;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background-color: #0ea5e9;
+        }
+
+        footer {
+            background: #0f172a;
+            padding: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a {
+            color: #38bdf8;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <a href="HOME.HTML" class="back-button">← Back to Home</a>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="resume-title">
+            <h1>My Resume</h1>
+            <p>Explore my professional experience and skills</p>
+        </div>
+
+        <!-- Personal Information Section -->
+        <div class="resume-item">
+            <h3>Personal Information</h3>
+            <p><strong>Name:</strong> Anushka Lambate</p>
+            <p><strong>Email:</strong> anushkalambate@example.com</p>
+            <p><strong>Phone:</strong> +1234567890</p>
+            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/anushkalambate</a></p>
+            <p><strong>Behance:</strong> <a href="#">behance.net/anushkalambate</a></p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="resume-item">
+            <h3>Education</h3>
+            <p><strong>Bachelor of Business Administration</strong> - XYZ University (2024 - Present)</p>
+            <p><strong>High School Diploma</strong> - ABC School (2020 - 2024)</p>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="resume-item">
+            <h3>Experience</h3>
+            <p><strong>Junior Graphic Designer</strong> - Creative Agency (2023 - Present)</p>
+            <p>Worked on designing brand identities, social media content, and print materials. Assisted with brainstorming and ideation processes.</p>
+
+            <p><strong>Intern</strong> - Advertising Firm (2022 - 2023)</p>
+            <p>Created visual content for social media and marketing campaigns, collaborated with senior designers on various creative projects.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="resume-item">
+            <h3>Skills</h3>
+            <p>Communication Design, Visual Storytelling, Adobe Photoshop, Illustrator, After Effects, Premiere Pro, Figma, SketchUp, Procreate, Web Design, Branding, Typography, and more.</p>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="resume-item">
+            <h3>Certifications</h3>
+            <p><strong>Adobe Certified Expert</strong> - Adobe (2023)</p>
+            <p><strong>UX Design Certificate</strong> - Coursera (2023)</p>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="resume-item">
+            <h3>Contact</h3>
+            <p>If you'd like to connect, feel free to reach out to me via email or LinkedIn.</p>
+        </div>
+
+        <!-- Download Resume Button -->
+        <a href="resume.pdf" class="download-button" download>Download Resume</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. Connect with me on:
+            <a href="#">LinkedIn</a> | <a href="#">Behance</a> | <a href="#">Email</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

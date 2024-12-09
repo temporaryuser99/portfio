@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #64748b);
+            color: white;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #38bdf8;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        .work-section {
+            padding: 50px 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .work-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .work-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .work-item img {
+            max-width: 30%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-top: 10px;
+        }
+
+        .work-content {
+            max-width: 60%;
+            text-align: left;
+        }
+
+        .work-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .work-content p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .work-content .btn {
+            background-color: #38bdf8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .work-content .btn:hover {
+            background-color: #0ea5e9;
+        }
+
+        footer {
+            background: #0f172a;
+            padding: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a {
+            color: #38bdf8;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .work-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .work-item img {
+                max-width: 70%;
+                margin-bottom: 20px;
+            }
+
+            .work-content {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .work-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .work-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button" aria-label="Back to Home Page">← Back to Home</a>
+
+    <!-- Work Section -->
+    <section class="work-section">
+        <div class="work-item">
+            <div class="work-content">
+                <h2>Project 1: Premium Chocolate Packaging</h2>
+                <p>A visually stunning design inspired by Swiss elegance, incorporating a modern twist with classical artistry.</p>
+                <a href="project1detail.html" class="btn">View Project</a>
+            </div>
+            <img src="project1.jpeg.png" alt="Premium Chocolate Packaging">
+        </div>
+
+        <div class="work-item">
+            <div class="work-content">
+                <h2>Project 2: Rococo Elegance Cosmetic Tube</h2>
+                <p>A luxurious cosmetic packaging design that blends Rococo's intricate motifs with a contemporary aesthetic.</p>
+                <a href="Project2detail.HTML" class="btn">View Project</a>
+            </div>
+            <img src="project2.jpg" alt="Rococo Cosmetic Tube">
+        </div>
+
+        <div class="work-item">
+            <div class="work-content">
+                <h2>Project 3: Mood Impression Coffee Cup</h2>
+                <p>A creative disposable coffee cup inspired by Impressionist art, evoking calm and vibrant emotions.</p>
+                <a href="project3detail.html" class="btn">View Project</a>
+            </div>
+            <img src="project3.jpg" alt="Mood Impression Coffee Cup">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. Connect with me on:
+            <a href="#">LinkedIn</a> | <a href="#">Behance</a> | <a href="#">Email</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
